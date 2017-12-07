@@ -1,0 +1,8 @@
+#filespackage
+
+node_modules/
+.idea/
+
+#file
+.gitignore
+
