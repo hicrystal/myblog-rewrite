@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const checkLogin = require('../middlewares/check').checkLogin
+const PostModel = require('../models/posts')
 
 
 // GET /posts 所有用户或者特定用户的文章页
@@ -11,7 +12,7 @@ router.get('/', function (req, res, next) {
 
 // POST /posts/create 发表一篇文章
 router.post('/create', checkLogin, function (req, res, next) {
-  res.send('发表文章')
+  res.send('create')
 })
 
 // GET /posts/create 发表文章页
